@@ -11,7 +11,8 @@ function valoresIntermedios(desde, hasta, granularidad) {
 
   const valores = [];
   for (let i = desdeNum + granularidad; i < hastaNum; i += granularidad) {
-    // Redondea a seis decimales y elimina el último cero de la derecha si hay
+    // Redondea a seis decimales y elimina el último cero de la derecha si hay,
+    // asi es como se incrementa
     const valorFormateado = i.toFixed(6).replace(/\.?0$/, '');
 
     valores.push(valorFormateado);
